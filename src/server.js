@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 require("dotenv").config();
 const mustache = require("mustache-express");
 const path = require("path");
@@ -11,7 +12,7 @@ server.set("views", path.join(__dirname, "views"));
 server.engine("mustache", mustache());
 
 server.use(express.static(path.join(__dirname, "../public")));
-
+server.use(express.json({ extended: true }));
 server.use(routes);
 
 server.listen(PORT, () => {
