@@ -1,4 +1,4 @@
-
+const { addResult, getAllResults } = require("../models/Answer");
 module.exports = {
   collectForm: (req, res) => {
     res.render("pages/formCollect");
@@ -38,7 +38,8 @@ module.exports = {
       negativeQuantity,
       notEvaluatedQuantity,
     };
-
-    res.status(201).json({ DTO });
+    addResult(DTO);
+    console.log(getAllResults());
+    res.status(201).json(DTO);
   },
 };
