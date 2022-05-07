@@ -1,4 +1,4 @@
-const { addResult, getAllResults } = require("../models/Answer");
+const { addResult, getAllResults, createFile } = require("../models/Answer");
 module.exports = {
   collectForm: (req, res) => {
     res.render("pages/formCollect");
@@ -40,6 +40,7 @@ module.exports = {
     };
     addResult(DTO);
     console.log(getAllResults());
+    createFile(getAllResults());
     res.status(201).json(DTO);
   },
 };
