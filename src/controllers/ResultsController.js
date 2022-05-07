@@ -1,5 +1,7 @@
+const { getAllResults } = require("../models/Answer");
 module.exports = {
   resultsCollect: (req, res) => {
-    res.render("pages/results");
+    let results = getAllResults();
+    res.render("pages/results", { results });
   },
 };
