@@ -30,7 +30,7 @@ module.exports = {
         console.error(err);
       }
     } else {
-      return [];
+      return false;
     }
   },
 };

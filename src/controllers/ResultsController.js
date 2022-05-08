@@ -3,6 +3,12 @@ const { countQuantities } = require("../helpers/operations");
 module.exports = {
   resultsCollect: async (req, res) => {
     let data = await getAllResults();
+    if (!data) {
+      res.render("pages/results", {
+        empty: "Não há resultados a serem exibidos!",
+      });
+      return;
+    }
     let results = countQuantities(JSON.parse(data));
     res.render("pages/results", {
       total: results[4],

@@ -1,5 +1,6 @@
 {{>partials/header}}   
-    <div class="container card mt-5 w-50">
+  {{#total}}
+      <div class="container card mt-5 w-50">
       <div class="row text-center">
         <h5>Total</h5>
       </div>
@@ -9,6 +10,10 @@
         </div>
       </div>          
       {{>partials/resultLayout}}
-    </div>   
+    </div> 
+  {{/total}}
+  {{#empty}}
+    <h5 class="container mt-5 text-center">{{empty}}</h5>
+  {{/empty}}
   </body>
 </html>
