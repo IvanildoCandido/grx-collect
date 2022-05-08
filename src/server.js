@@ -5,7 +5,7 @@ const mustache = require("mustache-express");
 const path = require("path");
 const routes = require("./routes");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const server = express();
 server.set("view engine", "mustache");
 server.set("views", path.join(__dirname, "views"));

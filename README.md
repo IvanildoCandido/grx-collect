@@ -4,11 +4,14 @@
 
 Projeto realizado em um teste técnico para a empresa GRX Soluções. O desafio consiste na criação de uma página de coleta de dados com armazenamento em arquivo.
 
-## Demonstração da aplicação
+## Instalação
 
-O sistema está hospedado na plataforma heroku e pode ser acessado clicando no link abaixo:
+- 1 - Clone esse repositório com o comando `git clone git@github.com:IvanildoCandido/grx-collect.git`
+- 2 - Rode o comando `npm install`
+- 3 - Execute o comando `npm start`
+- 4 - Acesse no navegador o endereço: `http://localhost:5000`
 
-[GRX Coleta](https://quiet-sierra-32184.herokuapp.com/)
+Obs: Necessário ter o node e o git instalados em sua máquina.
 
 ## Ferramentas utilizadas no desenvolvimento
 
@@ -23,6 +26,8 @@ O teste foi bem desafiador o que me chamou mais a atenção foi a parte de remde
 ## Etapas que faltaram
 
 Acredito que cumpri com os requisitos solicitados, mas como melhoria poderia acrescentar a refatoração de algumas funções para melhorar a complexidade do código.
+
+Tentei fazer deploy no heroku porém descobri que o serviço não armazena arquivos em tempo de execução. Farei futuramente uso do servico S3 da AWS para suprir essa necessidade.
 
 ## Feedback sobre o teste
 

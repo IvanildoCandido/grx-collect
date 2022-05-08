@@ -1,0 +1,1 @@
+[{"question_1":"yes","question_2":"yes","question_3":"notKnow","question_4":"aaaaaaaaaaaaaaaaaaaaaa","positiveQuantity":2,"negativeQuantity":0,"notEvaluatedQuantity":1}]
