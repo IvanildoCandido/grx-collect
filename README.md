@@ -4,6 +4,12 @@
 
 Projeto realizado em um teste técnico para a empresa GRX Soluções. O desafio consiste na criação de uma página de coleta de dados com armazenamento em arquivo.
 
+## Demonstração da aplicação
+
+O sistema está hospedado na plataforma heroku e pode ser acessado clicando no link abaixo:
+
+[GRX Coleta](https://quiet-sierra-32184.herokuapp.com/)
+
 ## Ferramentas utilizadas no desenvolvimento
 
 - [Express](https://expressjs.com/pt-br/) - Framework para criação do servidor.
