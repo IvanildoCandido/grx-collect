@@ -1,10 +1,13 @@
-const fs = require("fs");
+const { getAllResults } = require("../helpers/operations");
 const path = require("path");
-
-let data = [];
+const fs = require("fs");
 
 module.exports = {
   addResult: (answer) => {
+    let data = JSON.parse(getAllResults());
+    if (!data) {
+      data = [];
+    }
     data.push(answer);
     fs.writeFile(
       path.join(__dirname, "../data/answer.txt"),
@@ -17,20 +20,5 @@ module.exports = {
         }
       }
     );
-  },
-  getAllResults: () => {
-    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
-      try {
-        const data = fs.readFileSync(
-          path.join(__dirname, "../data/answer.txt"),
-          "utf8"
-        );
-        return data;
-      } catch (err) {
-        console.error(err);
-      }
-    } else {
-      return false;
-    }
   },
 };

@@ -1,8 +1,12 @@
-const { getAllResults } = require("../models/Answer");
+const { getAllResults } = require("../helpers/operations");
 const { countQuantities } = require("../helpers/operations");
+const path = require("path");
+const fs = require("fs");
+
 module.exports = {
   resultsCollect: async (req, res) => {
-    let data = await getAllResults();
+    let data = [];
+    data = await getAllResults();
     if (!data) {
       res.render("pages/results", {
         empty: "Não há resultados a serem exibidos!",
@@ -30,5 +34,11 @@ module.exports = {
         },
       ],
     });
+  },
+  clearAnswers: (req, res) => {
+    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
+      fs.unlinkSync(path.join(__dirname, "../data/answer.txt"));
+    }
+    res.render("pages/formCollect");
   },
 };

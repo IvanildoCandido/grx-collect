@@ -1,4 +1,6 @@
 const { convertTitles } = require("../helpers/formatValues");
+const path = require("path");
+const fs = require("fs");
 
 module.exports = {
   countQuantities: (data) => {
@@ -27,5 +29,20 @@ module.exports = {
     }, {});
     let titles = convertTitles(Object.keys(results));
     return [...titles, ...Object.values(results)];
+  },
+  getAllResults: () => {
+    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
+      try {
+        const data = fs.readFileSync(
+          path.join(__dirname, "../data/answer.txt"),
+          "utf8"
+        );
+        return data;
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      return false;
+    }
   },
 };
