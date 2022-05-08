@@ -12,7 +12,7 @@ O teste foi bem desafiador o que me chamou mais a atenção foi a parte de remde
 
 ## Etapas que faltaram
 
-Acredito que cumpri com os requisitos solicitados, mas como melhoria poderia acrescentar a refatoração de algumas funçoes para melhorar a complexidade do código.
+Acredito que cumpri com os requisitos solicitados, mas como melhoria poderia acrescentar a refatoração de algumas funções para melhorar a complexidade do código.
 
 ## Feedback sobre o teste
 
