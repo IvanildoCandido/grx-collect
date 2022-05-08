@@ -1,5 +1,9 @@
 # Desafio Coleta - GRX Soluções
 
+## Introdução
+
+Projeto realizado em um teste técnico para a empresa GRX Soluções. O desafio consiste na criação de uma página de coleta de dados com armazenamento em arquivo.
+
 ## Ferramentas utilizadas no desenvolvimento
 
 - [Express](https://expressjs.com/pt-br/) - Framework para criação do servidor.
