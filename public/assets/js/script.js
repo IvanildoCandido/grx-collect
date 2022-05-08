@@ -8,13 +8,15 @@ txtArea.addEventListener("keyup", function (e) {
 });
 
 formCollect.addEventListener("submit", function (e) {
+  e.preventDefault();
   let minChars = 15;
   let totalChars = txtArea.value.length;
 
   if (totalChars < minChars) {
     txtArea.focus();
-    e.preventDefault();
+    return;
   }
+  sendAnswer();
 });
 
 const sendAnswer = () => {

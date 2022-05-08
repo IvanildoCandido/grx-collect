@@ -1,1 +1,1 @@
-[{"question_1":"yes","question_2":"yes","question_3":"yes","question_4":"eeeeeeeeeeeeeeeeeeeeeeeee","positiveQuantity":3,"negativeQuantity":0,"notEvaluatedQuantity":0},{"question_1":"no","question_2":"no","question_3":"no","question_4":"qqqqqqqqqqqqqqqqqqqqqqqqqq","positiveQuantity":0,"negativeQuantity":3,"notEvaluatedQuantity":0}]
+[{"question_1":"yes","question_2":"yes","question_3":"yes","question_4":"Agora acredito que foi","positiveQuantity":3,"negativeQuantity":0,"notEvaluatedQuantity":0}]
