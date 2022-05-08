@@ -31,10 +31,10 @@ module.exports = {
     return [...titles, ...Object.values(results)];
   },
   getAllResults: () => {
-    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
+    if (fs.existsSync(path.join(__dirname, "../../public/data/answer.txt"))) {
       try {
         const data = fs.readFileSync(
-          path.join(__dirname, "../data/answer.txt"),
+          path.join(__dirname, "../../public/data/answer.txt"),
           "utf8"
         );
         return data;

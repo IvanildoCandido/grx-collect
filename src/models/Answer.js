@@ -10,7 +10,7 @@ module.exports = {
     }
     data.push(answer);
     fs.writeFile(
-      path.join(__dirname, "../data/answer.txt"),
+      path.join(__dirname, "../../public/data/answer.txt"),
       JSON.stringify(data),
       (err) => {
         if (err) {

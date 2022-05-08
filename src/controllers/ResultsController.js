@@ -36,8 +36,8 @@ module.exports = {
     });
   },
   clearAnswers: (req, res) => {
-    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
-      fs.unlinkSync(path.join(__dirname, "../data/answer.txt"));
+    if (fs.existsSync(path.join(__dirname, "../../public/data/answer.txt"))) {
+      fs.unlinkSync(path.join(__dirname, "../../public/data/answer.txt"));
     }
     res.render("pages/formCollect");
   },
