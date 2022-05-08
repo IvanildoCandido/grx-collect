@@ -4,7 +4,6 @@ module.exports = {
   resultsCollect: async (req, res) => {
     let data = await getAllResults();
     let results = countQuantities(JSON.parse(data));
-    console.log(results);
     res.render("pages/results", {
       total: results[4],
       values: [

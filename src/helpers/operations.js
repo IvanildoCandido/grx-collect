@@ -1,3 +1,5 @@
+const { convertTitles } = require("../helpers/formatValues");
+
 module.exports = {
   countQuantities: (data) => {
     let totalPositive = data.reduce((acc, item) => {
@@ -23,6 +25,7 @@ module.exports = {
       acc[Object.values(item)[0]] = Object.values(item)[1];
       return acc;
     }, {});
-    return [...Object.keys(results), ...Object.values(results)];
+    let titles = convertTitles(Object.keys(results));
+    return [...titles, ...Object.values(results)];
   },
 };
