@@ -1,12 +1,14 @@
+      {{#values}}     
       <div class="row text-center mt-1 mb-2">
-        <div class="col w-100"><h5>Quantidade Negativa</h5></div>
+        <div class="col w-100"><h5>Quantidade {{title}}</h5></div>
         <div class="col w-100"><h5>% Negativa</h5></div>
       </div>
       <div class="row text-center mt-1 mb-2">
         <div class="col card bg-secondary p-3 m-1">
-          <span class="fw-bold">100</span>
+          <span class="fw-bold">{{value}}</span>
         </div>
         <div class="col card bg-secondary p-3 m-1">
-          <span class="fw-bold">100</span>
+          <span class="fw-bold">{{percent}}%</span>
         </div>
-      </div>
+      </div>     
+      {{/values}}
