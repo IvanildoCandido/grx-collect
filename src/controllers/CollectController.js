@@ -39,8 +39,6 @@ module.exports = {
       notEvaluatedQuantity,
     };
     addResult(DTO);
-    console.log(getAllResults());
-    createFile(getAllResults());
-    res.status(201).json(DTO);
+    res.render("pages/results");
   },
 };

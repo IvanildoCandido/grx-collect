@@ -6,11 +6,6 @@ let data = [];
 module.exports = {
   addResult: (answer) => {
     data.push(answer);
-  },
-  getAllResults: () => {
-    return data;
-  },
-  createFile: (data) => {
     fs.writeFile(
       path.join(__dirname, "../data/answer.txt"),
       JSON.stringify(data),
@@ -22,5 +17,20 @@ module.exports = {
         }
       }
     );
+  },
+  getAllResults: () => {
+    if (fs.existsSync(path.join(__dirname, "../data/answer.txt"))) {
+      try {
+        const data = fs.readFileSync(
+          path.join(__dirname, "../data/answer.txt"),
+          "utf8"
+        );
+        return data;
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      return [];
+    }
   },
 };

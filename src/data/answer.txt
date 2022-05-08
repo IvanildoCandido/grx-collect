@@ -1,1 +1,1 @@
-[{"question_1":"yes","question_2":"no","question_3":"notKnow","question_4":"aaaaaaaaaaaaaaa","positiveQuantity":1,"negativeQuantity":1,"notEvaluatedQuantity":1}]
+[{"question_1":"yes","question_2":"no","question_3":"no","question_4":"aaaaaaaaaaaaaaaaaaaaaaaa","positiveQuantity":1,"negativeQuantity":2,"notEvaluatedQuantity":0},{"question_1":"no","question_2":"no","question_3":"notKnow","question_4":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","positiveQuantity":0,"negativeQuantity":2,"notEvaluatedQuantity":1}]

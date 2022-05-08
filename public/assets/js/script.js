@@ -35,4 +35,5 @@ const sendAnswer = () => {
   })
     .then((res) => res.json())
     .catch((err) => console.log(err));
+  window.location.href = "./results";
 };
